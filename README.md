@@ -1,195 +1,109 @@
-<h2>Description</h2>
-A social media app similar to Instagram that people can actually use.
+# Social Media Website  
 
-<h2>Preview</h2>
+## Mô tả dự án  
+Social Media Website là một nền tảng mạng xã hội với giao diện thân thiện, thiết kế hiện đại, và nhiều tính năng phong phú. Dự án được xây dựng bằng **React.js**, sử dụng **Context API**, **Redux**, **Redux Thunk**, **Firebase**, **SCSS**, và **Styled Components** để đảm bảo hiệu suất cao và trải nghiệm người dùng tốt nhất.
 
+---
 
-<img src="/Screenshots/Capture1.png" alt="demo1"/>
+## Tính năng chính  
 
-<img src="/Screenshots/Capture2.png" alt="demo2"/>
+### **Authentication System**  
+- Đăng nhập bằng nhiều phương thức:  
+  - Google  
+  - Twitter  
+  - Github  
+  - Email và mật khẩu  
+- Quên mật khẩu: Hỗ trợ lấy lại mật khẩu qua email.  
 
-<img src="/Screenshots/Capture4.png" alt="demo3"/>
+---
 
-<img src="/Screenshots/Capture5.png" alt="demo4"/>
+### **Hồ sơ cá nhân**  
+- **Chỉnh sửa thông tin cá nhân**:  
+  - Thay đổi tên người dùng, mật khẩu.  
+  - Cập nhật ảnh đại diện.  
+  - Cài đặt trạng thái hoạt động (bật/tắt).  
+  - Đặt tài khoản ở chế độ công khai/riêng tư.  
+  - Vô hiệu hóa tính năng bình luận.  
+  - Quản lý danh sách chặn người dùng.  
+- **Kết nối**:  
+  - Theo dõi/Bỏ theo dõi người dùng.  
+  - Hiển thị danh sách bạn chung.  
+  - Xem tất cả những người bạn đang theo dõi.  
+  - Xác nhận trước khi bỏ theo dõi.  
+- **Xóa tài khoản**: Hỗ trợ xóa tài khoản người dùng.  
 
-<img src="/Screenshots/Capture3.gif" alt="demo4"/>
+---
 
-<h2>Demo</h2>
+### **Bài đăng**  
+- **Tạo bài viết**:  
+  - Đăng ảnh, video (từ máy ảnh hoặc thư viện).  
+  - Cắt và chỉnh bộ lọc cho hình ảnh.  
+  - Đăng nội dung âm thanh (như bài hát hoặc podcast ngắn).  
+  - Đăng tweet, câu hỏi khảo sát hoặc video YouTube.  
+- **Tương tác với bài viết**:  
+  - Thích/Không thích bài viết.  
+  - Hiển thị danh sách người đã thích bài viết.  
+  - Hiển thị bạn chung đã thích bài viết.  
+  - Hiệu ứng hoạt hình khi thích bài viết.  
+- **Bình luận**:  
+  - Bình luận hoặc trả lời bình luận.  
+  - Thích/Không thích bình luận.  
+  - Thêm emoji khi bình luận.  
+  - Tắt bình luận cho bài viết cụ thể.  
+  - Chỉ người sở hữu có thể xóa bài viết hoặc bình luận.  
 
-<a href="https://instagram-clone-21d9b.web.app" style="color: #cb3837; display: block; margin-bottom: 4px;">Click here to go to the Live Demo</a> 🔥 🔥 <br/>
-<a href="https://www.youtube.com/watch?v=hODQDV1sJJs">Youtube demo</a> <br/>
-Give me a star if you like it. ⭐
+---
 
-<h2>Core Features</h2>
+### **Chat**  
+- Nhắn tin với người dùng khác.  
+- Gửi ảnh, video, tài liệu, nội dung âm thanh và emoji.  
+- Nhận thông báo khi người khác đang gõ hoặc tham gia trò chuyện.  
+- Xóa tin nhắn từ cả hai phía.  
+- Tìm kiếm tin nhắn dễ dàng.  
 
- <ul class="bullet--1">
-                                             <li><p>Authentication system</p>
-                                              <ul class="bullet--2">
-                                               <li><p>Users can sign-in with different methods like Google, Twitter, Github, or Email and password</p></li>
-                                               <li><p>Ability to retrieve password if it is forgotten </p></li>
-                                              </ul>
-                                               </li>
-                                            <li><p>Profile screen</p>
-                                                <ul class="bullet--2">
-                                                    <li> <p>Follow/Unfollow users
-                                                        <ul>
-                                                            <li class="bullet--3"><p>View all followed users on your profile or other's</p></li>
-                                                            <li class="bullet--3"><p>Unfollow confirmation modal</p></li>
-                                                        </ul>
-                                                        </p>
-                                                    </li>
-                                                    <li><p>Show mutual friends</p></li>
-                                                    <li><p>Edit profile</p>
-                                                            <ul>
-                                                                <li class="bullet--3"><p>Set profile information and avatar picture</p></li>
-                                                                <li class="bullet--3"><p>Manage blocked users</p></li>
-                                                            </ul>
-                                                        </li>
-                                                    <li><p>Account settings</p></li>
-                                                     <ul>
-                                                             <li class="bullet--3"><p>Change account's Username and Password</p></li>
-                                                             <li class="bullet--3"><p>Show/Hide activity status</p></li>
-                                                             <li class="bullet--3"><p>Make account private/public </p></li>
-                                                             <li class="bullet--3"><p>Disable Comments</p></li>
-                                                             <li class="bullet--3"><p>Delete account</p></li>
-                                                             <li class="bullet--3"><p> + more options</p></li>
-                                                    </ul>
-                                                </ul>
-                                            </li>
-                                            <li><p>Posts</p>
-                                                <ul class="bullet--2">
-                                                    <li><p>Feed is based on who the user follow</p></li>
-                                                    <li><p>Users can post pictures and videos from a camera or gallery</p></li>
-                                                    <li><p>Crop and filter image posts before sharing</p></li>
-                                                    <li><p>Post audio content like songs or mini podcasts</p></li>
-                                                    <li><p>Publish a tweet</p></li>
-                                                    <li><p>Post a poll question</p></li>
-                                                    <li><p>Post a YouTube video</p></li>
-                                                    <li><p>Like/Dislike posts
-                                                        <ul class="bullet--3">
-                                                            <li><p>View all likes and who liked it</p></li>
-                                                            <li><p>Show mutual likes</p></li>
-                                                            <li><p>Nice animation when liking a post</p></li>
-                                                        </ul>
-                                                        </p>
-                                                    </li>
-                                                    <li><p>Comment
-                                                            <ul class="bullet--3">
-                                                                <li><p>Comment or reply to someone's comment</p></li>
-                                                                <li><p>Like/Dislike comments and sub-comments</p></li>
-                                                                <li><p>View all comments and who liked them</p></li>
-                                                                <li><p>Include emojis among hundreds while commenting</p></li>
-                                                                 <li><p>Turn off commenting on a specific post</p></li>
-                                                            </ul>
-                                                        </p>
-                                                    </li>
-                                                    <li><p>Delete comments or an entire post only by their owners </p>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <p>Chat screen</p>
-                                                <ul class="bullet--2">
-                                                    <li><p>Chat with any user</p></li>
-                                                    <li><p>Share images, videos, audio, documents, and emojis while chatting</p></li>
-                                                    <li><p>Get notified when the other person is typing</p></li>
-                                                    <li><p>Get notified when the other person enters the chat you are in</p></li>
-                                                    <li><p>Unsend and copy messages</p></li>
-                                                    <li><p>Delete chat from both sides</p></li>
-                                                </ul>
-                                            </li>
-                                             <li>
-                                                <p>Find people</p>
-                                                <ul class="bullet--2">
-                                                    <li><p>Explore other people's posts</p></li>
-                                                    <li><p>Sort these posts by likes count, comments count, date, or randomly in both ascending and descending orders</p></li>
-                                                    <li><p>Filter them to show images only, videos only, audio only, or posts from people you followed only</p></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <p>Notification screen of the latest updates</p>
-                                                <ul class="bullet--2">
-                                                 <li><p>Notifications can self-destruct if the post, reel, like, or comment that based on it got deleted</p></li>
-                                                  <li><p>Notifications are grouped into multiple sections: Today, Yesterday, This week, This month, and earlier</p></li>
-                                                </ul>
-                                            </li>
-                                            <li><p>Block/Unblock users</p></li>
-                                            <li><p>Share video Reels</p>
-                                                       <ul class="bullet--2">
-                                                          <li><p>Like and comment on other people's reels</p></li>
-                                                          <li><p>Put reels into groups</p></li>
-                                                    </ul>
-                                            </li>
-                                            <li><p>Account privacy</p></li>
-                                            <li><p>Search users</p>
-                                                <ul class="bullet--2">
-                                                 <li><p>Hands-free voice Search or search by typing</p></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <p>Suggestions list</p>
-                                                <ul class="bullet--2">
-                                                 <li><p>View new members within the current week</p></li>
-                                                 <li><p>View upcoming birthdays within the current month</p></li>
-                                                  <li><p>Hover over any user to see their profile in a mini window</p></li>
-                                                </ul>
-                                            </li>
-                                            <li><p>Activity Status</p></li>
-                                            <li><p>Save posts</p></li>
-                                            <li><p>Included themes are: Dark/light, Iced Coffee, Snorkel Blue, Blue Izis, Butter Cup and honeysucle</p></li>
-                                            <li>
-                                                <p>Compatiblity and performance</p>
-                                                 <ul class="bullet--2">
-                                                    <li><p>Passed multiple automated tests on different functionalites using Cypress.io</p></li>
-                                                    <li><p>Fully responsive on mobile and tablet devices as well</p></li>
-                                                    <li><p>Blazing fast performance</p></li>
-                                                    <li><p>Compatible with all modern browsers including Internet explorer, Firefox, Chrome, Edge ,Opera and Safari.</p></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
- <h2>Used technologies</h2>    
-  <ul class="bullet--1">
-                                                    <li><p>React.js</p></li>
-                                                    <li><p>Context API</p></li>
-                                                    <li><p>Redux & Redux Thunk</p></li>
-                                                    <li><p>Firebase</p></li>
-                                                    <li><p>SCSS</p></li>
-                                                    <li><p>Styled Components</p></li>
-                                                </ul>
-  <h2>Features that will be added soon</h2>  
-   <ul class="bullet--1">
-    <li><p>Stories</p></li>
-    <li><p>Ability to put multiple media contents in one post</p></li>
-    <li><p>Ability to send voice messages</p></li>
-   </ul>
+---
 
-## Available Scripts
-Please note before cloning the project: All functions that are responsible for handling actions like following, liking, commenting, etc.. are exist in Context.js which will not be pushed to the repo until this project gets at least 150 stars. without that file, the app won't work.
-Knowing that, In the project directory, you can run:
+### **Tìm kiếm và Khám phá**  
+- Khám phá bài viết từ người khác với các bộ lọc:  
+  - Theo số lượt thích, bình luận, ngày đăng, hoặc ngẫu nhiên.  
+  - Lọc bài viết chỉ hiển thị hình ảnh, video, âm thanh hoặc từ người bạn theo dõi.  
+- Tìm kiếm người dùng bằng giọng nói hoặc nhập tay.  
+- Gợi ý danh sách người dùng mới hoặc có sinh nhật sắp tới.  
+- Xem nhanh hồ sơ người dùng qua cửa sổ thu nhỏ.  
 
-### `npm start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### **Thông báo**  
+- Hiển thị các cập nhật mới nhất về bài viết, thích, bình luận hoặc reel.  
+- Thông báo tự hủy nếu nội dung gốc bị xóa.  
+- Phân loại thông báo theo các mốc thời gian (Hôm nay, Hôm qua, Tuần này, Tháng này).  
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+### **Reels**  
+- Chia sẻ video Reels.  
+- Thích và bình luận trên video Reels của người khác.  
+- Phân nhóm các Reels theo chủ đề.  
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run cypress`
+### **Khả năng tương thích và Hiệu suất**  
+- Hỗ trợ nhiều theme như: Dark/Light, Iced Coffee, Snorkel Blue, Blue Izis, Butter Cup và Honeysuckle.  
+- Responsive trên mọi thiết bị (di động và máy tính bảng).  
+- Hiệu suất nhanh chóng và ổn định.  
+- Tương thích với tất cả trình duyệt hiện đại (Chrome, Firefox, Safari, Edge, Opera, Internet Explorer).  
 
-Launch end to end testing with Cypress.io
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Công nghệ sử dụng  
+1. **Frontend**:  
+   - React.js  
+   - Context API  
+   - Redux & Redux Thunk  
+   - Styled Components  
+   - SCSS  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+2. **Backend**:  
+   - Firebase Authentication  
+   - Firebase Realtime Database  
+   - Firebase Storage
